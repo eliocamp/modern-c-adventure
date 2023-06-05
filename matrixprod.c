@@ -30,12 +30,9 @@ void dot_product(double x[],
 
     // size of product is x_dims[0], y_dims[1]
     for (size_t i = 0; i < m; i++) {
-
         for (size_t j = 0; j < p; j++) {
-
             for (size_t k = 0; k < n; k++) {
                 // k moves in columns in x and rows in y
-
                 product[j + i*p] += x[i * n + k] * y[j + k * p]; // x_ik * y_kj
             }
         }
