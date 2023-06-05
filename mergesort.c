@@ -18,14 +18,13 @@ int main(int argc , char* argv[argc+1]) {
     double A[] = {45, 324, 34, 5654, 123, 234, 12, 25, 22, 1, 3, 99, 84}; // Test array
     size_t N = sizeof(A) / sizeof(A[0]);
 
-    int print_array(double A[], size_t N, char* name) {
+    void print_array(double A[], size_t N, char* name) {
         printf("%s: ", name);
 
         for (size_t i = 0; i < N; i++) {
             printf("%g, ", A[i]);
         }
         printf("\n");
-        return EXIT_SUCCESS;
     }
 
 print_array(A, sizeof(A)/sizeof(A[0]), "A");
